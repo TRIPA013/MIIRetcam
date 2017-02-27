@@ -80,10 +80,10 @@ public class PatientPagerImageAdapter extends PagerAdapter {
 
 
     static class ViewHolder {
-        TouchImageView image;
+        ImageView image;
 
         public ViewHolder(View convertView) {
-            image = (TouchImageView) convertView.findViewById(R.id.SingleView);
+            image = (ImageView) convertView.findViewById(R.id.SingleView);
         }
     }
 
