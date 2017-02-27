@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dull_black"
+    tools:context="com.kalps.patientprofile.FUllImageActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black_opacity_60"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewDone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@mipmap/ic_tick" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:background="@color/white_10_percent_opacity"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white_10_percent_opacity"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_crop" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white_10_percent_opacity"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_menu_delete" />
+
+
+    </LinearLayout>
+
+
+    <com.kalps.patientprofile.view.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayoutBottom"
+        android:layout_below="@+id/linearlayoutTop">
+
+
+    </com.kalps.patientprofile.view.CustomViewPager>
+
+
+</RelativeLayout>

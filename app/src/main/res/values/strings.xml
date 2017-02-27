@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MIIRetCam</string>
+
+    <string name="name"><![CDATA[<u>Name</u>]]></string>
+    <string name="mrdno"><![CDATA[<u>MRD No</u>]]></string>
+    <string name="reference"><![CDATA[<u>Reference</u>]]></string>
+    <string name="hospital"><![CDATA[<u>Hospital</u>]]></string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_patients_list">PatientsListActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="about">MII Ret Cam APP is a companion to ‘MII Ret Cam’ hand held device which got invented to make the difference and breakthrough in healthcare industry.\n\n\n
+
+MII Ret Cam device is indigenously designed and innovatively developed by MII Ret Cam Inc under the leadership of Dr Ashish Sharma. This portable device uses the power of smart phone technology to overcome the multiple inabilities of traditional fundus camera devices used by ophthalmologists.\n\n
+
+The most attractive nature of this device is that it comes at very affordable cost!\n\n\n
+
+Do visit www.miiretcam.com to know more.\n\n\n
+
+If you feel like writing to us, please do so at info@miiretcam.com</string>
+</resources>
