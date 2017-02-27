@@ -1,4 +1,14 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 23
@@ -26,6 +36,7 @@ android {
 }
 repositories {
     mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
 }
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -42,5 +53,8 @@ dependencies {
     compile 'com.soundcloud.android:android-crop:1.0.1@aar'
     compile project(':image')
     compile 'com.isseiaoki:simplecropview:1.1.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
+        transitive = true;
+    }
 
 }

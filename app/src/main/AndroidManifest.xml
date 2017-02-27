@@ -70,6 +70,10 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:name=".AboutActivity" >
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="63796da958c3c4649197d122acde86107089dc89" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

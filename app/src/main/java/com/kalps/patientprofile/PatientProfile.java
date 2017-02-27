@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 
+import com.crashlytics.android.Crashlytics;
 import com.kalps.patientprofile.utils.Utils;
 import com.kbeanie.imagechooser.api.BChooserPreferences;
 
+import io.fabric.sdk.android.Fabric;
 import java.io.File;
 
 /**
@@ -18,6 +20,7 @@ public class PatientProfile extends Application implements Application.ActivityL
     @Override
     public void onCreate() {
         super.onCreate();
+        Fabric.with(this, new Crashlytics());
         registerActivityLifecycleCallbacks(this);
         handler = new Handler(getMainLooper());
         BChooserPreferences pref = new BChooserPreferences(getApplicationContext());
