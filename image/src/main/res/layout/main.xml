@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout"
+<RelativeLayout android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
- <!--   <com.kbeanie.imagechooser.AspectFrameLayout
-        android:id="@+id/aspectFrame"
+    <SurfaceView
+        android:id="@+id/surfaceView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/buttonCLick"
-        android:layout_centerInParent="true">
--->
-        <SurfaceView
-            android:id="@+id/surfaceView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center" />
-
- <!--   </com.kbeanie.imagechooser.AspectFrameLayout>-->
-
+        android:layout_gravity="center" />
 
     <Button
         android:id="@+id/buttonCLick"
